@@ -1,0 +1,46 @@
+import java.util.*;
+  
+  interface CnssServices(){
+    public void suscribe();
+    public void payment();
+
+  }
+  abstract class personnel{
+    int id;
+    personnel(int id ){this.id=id;}
+      }
+      class directeur extends personnel implements CnssServices{
+        public directeur(int id){super (id)}
+        public void suscribe(){
+            system.out..println("souscrire directeur"+id);        }
+      }
+      public void payment (){
+        system.out.println("payer directeur"+id);
+      }
+      class ingenieur extends personnel implements CnssServices{
+        public ingenieur (int id){super(id)}
+        pblic void payement(){
+            system.out.println("payer ingenieur"+id);}
+      }
+      class stagiaire extends personnel{
+        public ingenieur(int id){super(id)}}
+        public void sucscribe(){
+            system.out.println("souscrire stagiaire"+id);}
+            public void payementyment(){
+                system.out.println("payer stagiaire"+id);}            
+        }
+      }
+      public class testpersonnel{
+        public static void main(string[]args){
+            vector<personnel>dessin =new vector<personnel>();
+            dessin.add(new ingenieur(100,50,1));
+             dessin.add(new stagiaire(10,3));
+             dessin.add(new ingenieur(70,20,4));
+              dessin.add(new ingenieur(100,50,1));
+     for (personnel F: staff)
+     if!(instanceof stagiaire)
+     ((CnssServices)F).suscribe();
+     for(personnnel F : dessin)
+     ((PayService)P).payment();         
+        }
+      }
